@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+}
+
+body{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 10%;
+    margin-right: 10%;
+
+}
+
+/* Header */
+header{
+    /*border:1px solid black;*/
+    margin-bottom: 30px;
+}
+
+header img{
+    display: block;
+    margin: auto auto;
+    width: 50%;
+    min-width: 400px;
+}
+
+/* Flexbox Nav */
+.navContainer{
+    margin: auto auto;
+    max-width: 1000px;
+    border-top: 2px solid rgb(237, 237, 237);
+    border-bottom: 2px solid rgb(237, 237, 237);
+}
+
+nav ul{
+    display:flex;
+    list-style: none;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+
+nav li{
+    color: black;
+    padding: 0.5rem 1.5rem;
+}
+
+nav a{
+    color: black;
+    text-decoration: none;
+    font-size: 0.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+nav a:hover{
+    color: rgb(12, 52, 121);
+    font-weight: bold;
+}
+
+nav a:active{
+    color: rgb(12, 52, 121);
+    box-shadow: 1px 1px inset;
+}
+
+/* Flexbox Main */
+section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 1000px;
+    margin: auto;
+}
+
+article{
+    flex-grow: 1;
+    flex-shrink: 0;
+    margin: 2rem;
+}
+
+.articleB:hover{
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.articleA{
+    display: flex;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2),
+    rgba(0, 0, 0, 0.2)), url("high\ jewelry\ banner.jpeg");
+    background-size: 1000px;
+    max-width: 1000px;
+    height: 300px;
+    color: white;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+h1{
+    font-size: 2rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h1+p{
+    max-width: 30rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2{
+    font-size: 1rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 0.3rem;
+}
+
+h2~p{
+    font-size: 0.8rem;
+    width: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+/* Footer */
+footer{
+    display: flex;
+    justify-content: center;
+}
+
+.footerContainer{
+    border-top: 2px solid rgb(237, 237, 237);
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 2rem;
+    flex: 1;
+}
+
+.footerContainer div{
+    flex: 1;
+    margin: 2rem;
+}
+
+.footerRight{
+    display: flex;
+    align-items: end;
+    justify-content: right;
+}
+
+footer p{
+    font-size: 0.8rem;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
